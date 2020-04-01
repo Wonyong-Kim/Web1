@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>테스트 슬라이드</title>
+  <style>
+    .b_1 {
+      overflow: hidden;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .b_1 img {
+      height: 500px;
+      width: auto;
+    }
+
+    .b_1 #b1_2 {
+      display: none;
+    }
+
+    .b_2 {
+      margin-top: 10px;
+      background: gray;
+    }
+
+    .b_2 span {
+      width: 49%;
+      text-align: center;
+      line-height: 30px;
+      height: 30px;
+      display: inline-block;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="b_1">
+    <img src="https://images.unsplash.com/photo-1567516364473-233c4b6fcfbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+    id="b1_1" attr-prev="" attr-next="2">
+
+    <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+    id="b1_2" attr-prev="1" attr-next="3">
+
+    <img src="https://images.unsplash.com/photo-1548382131-e0ebb1f0cdea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_3" attr-prev="2" attr-next="4">
+
+    <img src="https://images.unsplash.com/photo-1499081589563-7c400fcd94e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+    id="b1_4" attr-prev="3" attr-next="5">
+
+    <img src="https://images.unsplash.com/photo-1546071267-5cfb1e0e8f41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+    id="b1_5" attr-prev="4" attr-next="6">
+
+    <img src="https://images.unsplash.com/photo-1551741568-53a19562313c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_6" attr-prev="5" attr-next="7">
+
+    <img src="https://images.unsplash.com/photo-1505535162959-9bbcb4ab22d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_7" attr-prev="6" attr-next="8">
+
+    <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_8" attr-prev="7" attr-next="9">
+
+    <img src="https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_9" attr-prev="8" attr-next="10">
+
+    <img src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_10" attr-prev="9" attr-next="11">
+
+    <img src="https://images.unsplash.com/photo-1544507888-56d73eb6046e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_11" attr-prev="10" attr-next="12">
+
+    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_12" attr-prev="11" attr-next="13">
+
+    <img src="https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_13" attr-prev="12" attr-next="14">
+
+    <img src="https://images.unsplash.com/photo-1563802098812-c76512b73b9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_14" attr-prev="13" attr-next="15">
+
+    <img src="https://images.unsplash.com/photo-1521117177129-ca6b2e68cb26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_15" attr-prev="14" attr-next="16">
+
+    <img src="https://images.unsplash.com/photo-1528809217021-151305b50e55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_16" attr-prev="15" attr-next="17">
+
+    <img src="https://images.unsplash.com/photo-1522100077728-4fae00f560c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_17" attr-prev="16" attr-next="18">
+
+    <img src="https://images.unsplash.com/photo-1548213238-0da7521bd6e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_18" attr-prev="17" attr-next="19">
+
+    <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_19" attr-prev="18" attr-next="20">
+
+    <img src="https://images.unsplash.com/photo-1555170629-9240c8e7df1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_20" attr-prev="19" attr-next="21">
+
+    <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_21" attr-prev="20" attr-next="22">
+
+    <img src="
+https://images.unsplash.com/photo-1512485694743-9c9538b4e6e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_22" attr-prev="21" attr-next="23">
+
+    <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_23" attr-prev="22" attr-next="24">
+
+    <img src="https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_24" attr-prev="23" attr-next="25">
+
+    <img src="https://images.unsplash.com/photo-1543430720-fa600c67e423?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_25" attr-prev="24" attr-next="26">
+
+    <img src="https://images.unsplash.com/photo-1482849297070-f4fae2173efe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_26" attr-prev="25" attr-next="27">
+
+    <img src="https://images.unsplash.com/photo-1564564295391-7f24f26f568b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_27" attr-prev="26" attr-next="28">
+
+    <img src="https://images.unsplash.com/photo-1508677137661-ed811eaf6122?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_28" attr-prev="27" attr-next="29">
+
+    <img src="https://images.unsplash.com/photo-1535982606227-475c9bf94018?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
+    id="b1_29" attr-prev="28" attr-next="30">
+
+    <img src="https://images.unsplash.com/photo-1544457073-505b76b886de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_30" attr-prev="29" attr-next="31">
+
+    <img src="https://images.unsplash.com/photo-1567612529009-820ed950f3ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_31" attr-prev="30" attr-next="32">
+
+
+    <img src="https://images.unsplash.com/flagged/photo-1556593269-8355a6764494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+    id="b1_32" attr-prev="31" attr-next="1">
+
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+
+    <img src=""
+    id="b1_" attr-prev="" attr-next="">
+  </div>
+  <div class="b_2">
+    <span id="btn_prev"> "<" </span>
+    <span id="btn_next"> ">" </span>
+  </div>
+</body>
+
+</html>
+
+<input type="hidden" id="curr_img" value="1">
+
+
+<script>
+  function get_curr_page() {
+
+    return $("#curr_img").val();
+  }
+
+  function set_curr_page(num) {
+    $("#curr_img").val(num);
+  }
+
+  $(function() {
+    $("#btn_prev").click(function() {
+      var curr_img = get_curr_page();
+
+      var tmp_prev = $("#b1_" + curr_img).attr("attr-prev");
+      if (tmp_prev != "" && typeof tmp_prev !== "undefined") {
+        $(".b_1 img").hide();
+        $("#b1_" + tmp_prev).show();
+        set_curr_page(tmp_prev);
+      }
+
+
+    });
+
+    $("#btn_next").click(function() {
+      var curr_img = get_curr_page();
+
+      var tmp_next = $("#b1_" + curr_img).attr("attr-next");
+      if (tmp_next != "" && typeof tmp_next !== "undefined") {
+        $(".b_1 img").hide();
+        $("#b1_" + tmp_next).show();
+        set_curr_page(tmp_next);
+      }
+
+
+    });
+  })
+</script>
